@@ -6,7 +6,7 @@ The paper explores using Attention spans that can adapt depending on the input t
 ## What does the paper contribute? 
 The basic idea of the paper is that adding learnable parameters in the self-attention mechanism will cause the model to learn the ideal length of the context depending on the input given to the model.
 
-For this experiment, I used a GPT model with 8 heads and 8 layers. The sequence length used in 4096 (The paper uses span lengths of up to 8192 but I did not have the memory to do that). The results I got from my experiments were similar to that the authors achieved. The figure below shows the adaptive attention masks for each of the head and layer of the transformer. 
+For this experiment, I used a GPT model with 8 heads and 8 layers. The sequence length used in 4096 (The paper uses span lengths of up to 8192 but I did not have the memory to do that). The results I got from my experiments were similar to that the authors achieved. The figure below shows the adaptive attention masks for each of the head and layer of the transformer (Horizontally across: Heads from 0-7, Vertically down: Layers 0-7).
 
 ![adaptive_attention_span](https://github.com/uuzall/adaptive_attention_span/blob/main/photos/attention_span_no_log.png)
 
